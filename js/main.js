@@ -11,7 +11,7 @@ $(document).ready(function(){
 // content en.........
 
 let rootEng = `
-    <div class="totaly min-vh-50 py-4">
+    <div class="totaly min-vh-50 py-3">
         <div class="img-logo text-center">
             <img src="./img/logo.png" alt="logo on time">
         </div>
