@@ -23,25 +23,8 @@ let rootEng = `
                 <button class="btn py-2 px-5 btn-warning fw-bold mt-2" type="submit">Activation <i class="fa-solid fa-paper-plane ms-2"></i></button>
             </form>
             <div class="py-3 mt-3">
-                <h5 class="mb-4 text-black h4">Follow us </h5>
+                <h5 class="mb-4 text-black h4">Download Our App</h5>
                 <div class="icons-footer d-flex align-items-center justify-content-center mx-auto">
-                        <a target="_blank" rel='noreferrer' href="https://www.facebook.com/ZARISolutionksa"><i
-                                class="fa-brands fa-facebook-f"></i></a>
-                        <a target="_blank" rel='noreferrer' href="https://twitter.com/SolutionZari"><i
-                                class="fa-brands fa-twitter"></i></a>
-                        <a target="_blank" rel='noreferrer' href="https://www.instagram.com/zarisolutionksa/"><i
-                                class="fa-brands fa-instagram"></i></a>
-                        <a target="_blank" rel='noreferrer' href="https://wa.me/+966566770235"><i
-                                class="fa-brands fa-whatsapp"></i></a>
-                        <a target="_blank" rel='noreferrer' href="https://www.linkedin.com/in/zari-solution-ksa-12717623b/"><i
-                                class="fa-brands fa-linkedin-in"></i></a>
-                        <a target="_blank" rel='noreferrer' href="https://www.tiktok.com/@zarisolutionksa"><img
-                                src="img/tik-tok.png" alt="tik-tok"/></a>
-                        <a target="_blank" rel='noreferrer'
-                        href="https://www.snapchat.com/add/zari_solutions?share_id=osFpGeXWnlE&locale=en-US"><img
-                                src="img/snapchat.png" alt="snapchat"/></a>
-                </div>
-                <div class="icons-footer d-flex align-items-center justify-content-center mx-auto mt-3">
                         <a target="_blank" rel='noreferrer' href="https://play.google.com/store/apps/details?id=com.zari.zari_manager"><i
                                 class="fa-brands fa-google-play fs-2"></i></a>
                         <a target="_blank" rel='noreferrer' href="https://apps.apple.com/eg/app/zari-on-time-manager/id1637906978"><i
@@ -67,25 +50,8 @@ let rootAra = `
                 <button class="btn py-2 px-5 btn-warning fw-bold mt-2" type="submit">تنشيــط<i class="fa-solid fa-paper-plane me-2"></i></button>
             </form>
             <div class="py-3 mt-3">
-                <h5 class="mb-4 text-black h4"> تابعنــا</h5>
+                <h5 class="mb-4 text-black h4">قم بتحميل تطبيقنــا</h5>
                 <div class="icons-footer d-flex align-items-center justify-content-center mx-auto">
-                    <a target="_blank" rel='noreferrer' href="https://www.facebook.com/ZARISolutionksa"><i
-                            class="fa-brands fa-facebook-f"></i></a>
-                    <a target="_blank" rel='noreferrer' href="https://twitter.com/SolutionZari"><i
-                            class="fa-brands fa-twitter"></i></a>
-                    <a target="_blank" rel='noreferrer' href="https://www.instagram.com/zarisolutionksa/"><i
-                            class="fa-brands fa-instagram"></i></a>
-                    <a target="_blank" rel='noreferrer' href="https://wa.me/+966566770235"><i
-                            class="fa-brands fa-whatsapp"></i></a>
-                    <a target="_blank" rel='noreferrer' href="https://www.linkedin.com/in/zari-solution-ksa-12717623b/"><i
-                            class="fa-brands fa-linkedin-in"></i></a>
-                    <a target="_blank" rel='noreferrer' href="https://www.tiktok.com/@zarisolutionksa"><img
-                            src="img/tik-tok.png" alt="tik-tok"/></a>
-                    <a target="_blank" rel='noreferrer'
-                    href="https://www.snapchat.com/add/zari_solutions?share_id=osFpGeXWnlE&locale=en-US"><img
-                            src="img/snapchat.png" alt="snapchat"/></a>
-                </div>
-                <div class="icons-footer d-flex align-items-center justify-content-center mx-auto mt-3">
                     <a target="_blank" rel='noreferrer' href="https://play.google.com/store/apps/details?id=com.zari.zari_manager"><i
                             class="fa-brands fa-google-play fs-2"></i></a>
                     <a target="_blank" rel='noreferrer' href="https://apps.apple.com/eg/app/zari-on-time-manager/id1637906978"><i
@@ -101,6 +67,7 @@ let userLang = navigator.language ;
 if(userLang.includes('en')){
     $('#root').html(rootEng);
 }
+
 else{
     $('#root').attr('dir' , 'rtl');
     $('#root').html(rootAra);
