@@ -19,7 +19,7 @@ let rootEng = `
             <form>
                 <div class="cont-phone w-35 mx-auto position-relative d-flex justify-content-center align-items-center">
                     <div class="cont-select position-absolute start-0 d-flex justify-content-end align-items-center">
-                        <img id="img-select" src="../img/flag of egy.png">
+                        <img id="img-select" src="./img/flag of egy.png">
                         <select class="py-2" id="phoneNum">
                             <option selected value="1">(+02)</option>
                             <option value="2">(+966)</option>
@@ -58,7 +58,7 @@ let rootAra = `
             <form>
                 <div class="cont-phone w-35 mx-auto position-relative d-flex justify-content-center align-items-center">
                     <div class="cont-select position-absolute start-0 d-flex justify-content-end align-items-center">
-                        <img id="img-select" src="../img/flag of egy.png">
+                        <img id="img-select" src="./img/flag of egy.png">
                         <select class="py-2" id="phoneNum">
                             <option selected value="1">(+02)</option>
                             <option value="2">(+966)</option>
@@ -88,7 +88,7 @@ let rootAra = `
 
 let userLang = navigator.language ;
 
-if(!userLang.includes('en')){
+if(userLang.includes('en')){
     $('#root').html(rootEng);
 }
 
@@ -105,11 +105,11 @@ let img = document.getElementById('img-select');
 cont.addEventListener('change' , function(){
     if(phoneNum.value == '1'){
         img.removeAttribute('src');
-        img.setAttribute('src' , '../img/flag of egy.png');
+        img.setAttribute('src' , './img/flag of egy.png');
     }
     else if(phoneNum.value == '2'){
         img.removeAttribute('src');
-        img.setAttribute('src' , '../img/flag of sau.png');
+        img.setAttribute('src' , './img/flag of sau.png');
     }
 })
 
